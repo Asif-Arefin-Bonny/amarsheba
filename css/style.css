@@ -145,16 +145,13 @@ input[type=submit] {
 }
 
 .service-showcase-icon h6{
-	padding-top:8px;
-}
-
-.service-showcase-icon .fa-3x{
-	padding-top: 10px;
+	padding-top:5px;
 }
 
 .service-showcase-icon a{
 	color: #79787b;
 	text-decoration:none;
+	transition: all .2s ease-in-out;
 }
 
 .service-showcase-icon a:hover{
@@ -162,7 +159,6 @@ input[type=submit] {
 	transform: scale(1.05);
 	transition: all .2s ease-in-out;
 }
-
 
 
 /* Carousel items */
@@ -421,120 +417,24 @@ input[type=submit] {
 }
 
 
+/* Scrollbar */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Layout-2 */
-.img-2{
-	background: 
-	linear-gradient(
-	rgba(0, 0, 0, 0.6),
-	rgba(255,255,255,0) 
-	),
-	url("../img/cover7.jpg");
-    background-repeat: no-repeat;
-	background-size: cover;
-	height:71vh;
-	width:100%;
-}
- 
-.hero-2 input[type=submit] {
-  position: absolute;
-  right: 0.75em;
-  top: 0.5em;
-  bottom: 0.5em;
-  z-index: 1;
-  width: 6em;
-  padding: 0;
-  cursor: pointer;
-  color: white;
-  background-color: #a6a6a6;
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 4px;
 }
 
-.hero-2 h1{
-	color: white;
-	padding-top: 120px;
-}
-.hero-2 h4{
-	color: white;
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
 }
 
-
-/* Layout-3 */
-.hero-3 h1{
-	color: #ff5a5f;
-	padding-top: 100px;
-	margin-left:100px;
-}
-.hero-3 h2{
-	margin-left:100px;
-}
-.hero-3 .is-vishidden {
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-.hero-3 .pattern {
-  padding: 1em; 
-  line-height: 1;
-  width:85%;
-  margin:auto;
-}
-.hero-3 .f {
-    position: relative;
-	top:20px;
-}
-
-.hero-3 input {
-  display: block;
-  border: 1px solid #d4d4d4;
-  border-radius:4px;
-}
-
-.hero-3 input:focus {
-  outline: 2px solid #d4d4d4;
-}
-
-.hero-3 input[type=search] {
-    width: 100%;
-    padding: 1.5em;
-    padding-right: 7em;
-    position: relative;
-    top: 0;
-    box-shadow: 5px 5px 50px #999999;
-}
- 
-.hero-3 input[type=submit] {
-  position: absolute;
-  right: 0.75em;
-  top: 0.5em;
-  bottom: 0.5em;
-  z-index: 1;
-  width: 6em;
-  padding: 0;
-  cursor: pointer;
-  color: white;
-  background-color: #ff5a5f;
-}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #666666 0%, #cccccc 52%);
+	}
